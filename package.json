@@ -1,0 +1,19 @@
+{
+  "name": "php-mysql-test",
+  "version": "1.0.0",
+  "description": "testing to interact with a database using PHP",
+  "main": "server.php",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "php",
+    "mysql",
+    "mysqli"
+  ],
+  "author": "Dário Silva",
+  "license": "IMT"
+}
