@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dasboard</title>
+</head>
+<body>
+
+    <div class="left-container">
+        <h1 class="title">
+            Register
+        </h1>
+        <div class="form-container">
+            <form action="server.php" class="register-form" method="post">
+                <label for="username">
+                    your name
+                </label>
+                <input type="name" placeholder="ex: john doe" required name="username" id="name-input">
+                <label for="email">
+                    your email
+                </label>
+                <input type="email" placeholder="ex: johndoe@gmail.com" required name="email" id="email-input">
+                <label for="phonenumber">
+                    your phone number
+                </label>
+                <input type="number" required placeholder="ex: 933333333" name="phonenumber" id="phone-input">
+                <button type="submit" id="submit-button" onclick="create_user()">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="right-container">
+        <h1 class="title">
+            Registrated
+        </h1>
+        <div class="form-container container-like-form" id="table-root">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
