@@ -1,0 +1,18 @@
+USE phpmysqltest;
+
+SHOW TABLES;
+
+DESCRIBE users;
+
+SELECT * FROM users;
+
+DROP TABLE users;
+
+
+CREATE TABLE IF NOT EXISTS users(
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(40) NOT NULL,
+email VARCHAR(55) NOT NULL UNIQUE,
+phone_number INT NOT NULL UNIQUE,
+PRIMARY KEY(id)
+);
