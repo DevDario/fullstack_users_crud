@@ -1,0 +1,126 @@
+*{
+    font-family: 'Inter', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0; padding: 0; box-sizing: border-box; top: 0; bottom: 0; left: 0; right: 0;
+}
+
+h1,h2,h3,label,a{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4ea;
+    font-family: 'Inter',sans-serif;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.form-container,
+.register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.title{
+    margin-top: 5rem;
+}
+
+.form-container{
+    margin-top: 2rem;
+}
+
+.register-form{
+    align-items: left;
+    align-content: left;
+    align-self: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.register-form input{
+    border:2px solid #c8c8c8;
+    outline: none;
+    padding:20px 65px;
+    border-radius: 15px;
+    background-color: #f5efef;
+}
+
+.register-form button{
+    outline: none;
+    border: none;
+    padding:20px 60px;
+    border-radius: 15px;
+    background-color: #1e1e1e;
+    cursor: pointer;
+    color: #f4f4ea;
+}
+
+#table-root{
+    overflow-y: scroll;
+    position: static;
+    height: 340px;
+}
+
+table {
+    background-color: #f4f4ea;
+    width: 100%;
+    border-collapse: collapse;
+    color:#1e1e1e;
+}
+
+.table-button {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border:none;
+    cursor: pointer;
+    color: #1e1e1e;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+
+table tr {
+    gap: 30px;
+    padding: 20px;
+}
+
+table tr td{
+    text-align: left;
+}
+
+table tr th {
+    text-align: center;
+}
+
+table td,
+table th {
+    border: 1px solid #c8c8c8;
+    text-align: left;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f3ebeb;
+}
+
+@media screen and (max-width:764px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 4rem;
+    }
+}
